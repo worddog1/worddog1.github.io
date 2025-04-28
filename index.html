@@ -1,349 +1,232 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OneHome Services - Professional Landscaping Services</title>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seasonal Soldiers LTD - Professional Seasonal Maintenance</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
     <div class="page-container">
-      <nav class="main-nav">
-        <div class="nav-container">
-          <div class="nav-left">
-            <h1 class="logo">OneHome Services</h1>
-            <div class="desktop-menu">
-              <a href="#services" class="nav-link">Services</a>
-              <a href="#portfolio" class="nav-link">Portfolio</a>
-              <a href="#about" class="nav-link">About</a>
-              <a href="#contact" class="nav-link">Contact</a>
-            </div>
-          </div>
-          <button class="quote-button">Get a Quote</button>
-          <button class="menu-toggle" aria-label="Toggle menu">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              class="menu-icon"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              ></path>
-            </svg>
-          </button>
-        </div>
-        <div class="mobile-menu" hidden>
-          <div class="mobile-menu-container">
-            <a href="#services" class="nav-link">Services</a>
-            <a href="#portfolio" class="nav-link">Portfolio</a>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#contact" class="nav-link">Contact</a>
-            <button class="quote-button">Get a Quote</button>
-          </div>
-        </div>
-      </nav>
-
-      <header class="hero">
-        <div class="hero-container">
-          <div class="hero-content">
-            <h2 class="hero-title">Transform Your Outdoor Space</h2>
-            <p class="hero-description">
-              Professional landscaping services to create the garden of your
-              dreams. From design to maintenance, we've got you covered.
-            </p>
-            <button class="cta-button">Schedule a Consultation</button>
-          </div>
-        </div>
-      </header>
-
-      <section id="services" class="services-section">
-        <div class="section-container">
-          <h2 class="section-title">Our Services</h2>
-          <div class="services-grid">
-            <div class="service-card">
-              <img
-                src="https://placehold.co/400x300"
-                alt="Landscape Design"
-                class="service-image"
-              />
-              <h3 class="service-title">Landscape Design</h3>
-              <p class="service-description">
-                Custom design solutions tailored to your space and style
-                preferences.
-              </p>
-            </div>
-            <div class="service-card">
-              <img
-                src="https://placehold.co/400x300"
-                alt="Garden Maintenance"
-                class="service-image"
-              />
-              <h3 class="service-title">Garden Maintenance</h3>
-              <p class="service-description">
-                Regular maintenance to keep your garden looking beautiful all
-                year round.
-              </p>
-            </div>
-            <div class="service-card">
-              <img
-                src="https://placehold.co/400x300"
-                alt="Hardscaping"
-                class="service-image"
-              />
-              <h3 class="service-title">Hardscaping</h3>
-              <p class="service-description">
-                Professional installation of patios, walkways, and retaining
-                walls.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="portfolio" class="portfolio-section">
-        <div class="section-container">
-          <h2 class="section-title">Our Portfolio</h2>
-          <div class="portfolio-grid">
-            <img
-              src="https://placehold.co/400x400"
-              alt="Portfolio 1"
-              class="portfolio-image"
-            />
-            <img
-              src="https://placehold.co/400x400"
-              alt="Portfolio 2"
-              class="portfolio-image"
-            />
-            <img
-              src="https://placehold.co/400x400"
-              alt="Portfolio 3"
-              class="portfolio-image"
-            />
-            <img
-              src="https://placehold.co/400x400"
-              alt="Portfolio 4"
-              class="portfolio-image"
-            />
-          </div>
-        </div>
-      </section>
-
-      <section class="testimonials-section">
-        <div class="section-container">
-          <h2 class="section-title">What Our Clients Say</h2>
-          <div class="testimonials-container">
-            <div class="testimonial-content">
-              <div class="testimonial-text" id="testimonial-text">
-                <!-- Testimonial text will be inserted by JavaScript -->
-              </div>
-            </div>
-            <div class="testimonial-dots">
-              <!-- Dots will be generated by JavaScript -->
-            </div>
-            <div class="testimonial-author">
-              <span class="author-name" id="testimonial-name">
-                <!-- Author name will be inserted by JavaScript -->
-              </span>
-              <span class="author-separator">-</span>
-              <span class="author-role" id="testimonial-role">
-                <!-- Author role will be inserted by JavaScript -->
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="about-section">
-        <div class="section-container">
-          <div class="about-container">
-            <div class="about-image-container">
-              <img
-                src="https://placehold.co/600x400"
-                alt="About Us"
-                class="about-image"
-              />
-            </div>
-            <div class="about-content">
-              <h2 class="section-title">About OneHome Services</h2>
-              <p class="about-description">
-                With over 15 years of experience, we're dedicated to creating
-                and maintaining beautiful outdoor spaces that exceed our
-                clients' expectations. Our team of certified professionals
-                brings expertise and passion to every project.
-              </p>
-              <div class="stats-container">
-                <div class="stat-item">
-                  <h3 class="stat-number">15+</h3>
-                  <p class="stat-label">Years Experience</p>
+        <nav class="main-nav">
+            <div class="nav-container">
+                <div class="nav-left">
+                    <a href="index.html" class="logo-a"><h1 class="logo">Seasonal Soldiers LTD</h1></a>
+                    <div class="desktop-menu">
+                        <a href="#services" class="nav-link">Services</a>
+                        <a href="projects.html" class="nav-link">Projects</a>
+                        <a href="about.html" class="nav-link">About</a>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </div>
                 </div>
-                <div class="stat-item">
-                  <h3 class="stat-number">500+</h3>
-                  <p class="stat-label">Projects Completed</p>
-                </div>
-                <div class="stat-item">
-                  <h3 class="stat-number">100%</h3>
-                  <p class="stat-label">Client Satisfaction</p>
-                </div>
-              </div>
+                <button class="quote-button">Get a Quote</button>
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="menu-icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
             </div>
+            <div class="mobile-menu" hidden>
+                <div class="mobile-menu-container">
+                    <a href="#services" class="nav-link">Services</a>
+                    <a href="projects.html" class="nav-link">Projects</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <button class="quote-button">Get a Quote</button>
+                </div>
+            </div>
+        </nav>
+
+        <header class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h2 class="hero-title">Year-Round Property Care</h2>
+                    <p class="hero-description">
+                        Professional seasonal maintenance services to keep your property 
+                        pristine all year long. From spring cleanups to winter snow removal.
+                    </p>
+                    <button class="cta-button">Schedule Service</button>
+                </div>
+            </div>
+        </header>
+
+        <section id="services" class="services-section">
+            <div class="section-container">
+                <h2 class="section-title">Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <img src="https://placehold.co/400x300" alt="Spring Cleanup" class="service-image">
+                        <h3 class="service-title">Spring Cleanups</h3>
+                        <p class="service-description">
+                            Complete seasonal cleanup including debris removal, pruning, 
+                            and bed preparation. Starting at $200
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://placehold.co/400x300" alt="Lawn Mowing" class="service-image">
+                        <h3 class="service-title">Weekly Lawn Mowing</h3>
+                        <p class="service-description">
+                            Regular maintenance with edging and trim work included. 
+                            Starting at $150/month
+                        </p>
+                    </div>
+                    <div class="service-card">
+                        <img src="https://placehold.co/400x300" alt="Snow Removal" class="service-image">
+                        <h3 class="service-title">Snow Removal</h3>
+                        <p class="service-description">
+                            Reliable snow clearing for driveways and walkways. 
+                            Starting at $200/month
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
+            <div class="section-container">
+                <h2 class="section-title">Recent Work</h2>
+                <div class="portfolio-grid">
+                    <img src="https://placehold.co/400x400" alt="Residential Cleanup" class="portfolio-image">
+                    <img src="https://placehold.co/400x400" alt="Commercial Snow Removal" class="portfolio-image">
+                    <img src="https://placehold.co/400x400" alt="Landscape Maintenance" class="portfolio-image">
+                    <img src="https://placehold.co/400x400" alt="Seasonal Setup" class="portfolio-image">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="section-container">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3 class="contact-title">Get in Touch</h3>
+                        <p class="contact-description">
+                            Ready to transform your outdoor space? Contact us today for a free consultation.
+                        </p>
+                        <div class="contact-detail">
+                            <p class="detail-label">Address</p>
+                            <p class="detail-value">123 Seasonal Lane, Winter City, ST 12345</p>
+                        </div>
+                        <div class="contact-detail">
+                            <p class="detail-label">Phone</p>
+                            <p class="detail-value">(555) 123-4567</p>
+                        </div>
+                        <div class="contact-detail">
+                            <p class="detail-label">Email</p>
+                            <p class="detail-value">contact@seasonalsoldiers.com</p>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-grid">
+                            <div class="form-group full-width">
+                                <label class="form-label">Name</label>
+                                <input type="text" class="form-input" id="contact-name">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-input" id="contact-email">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Phone</label>
+                                <input type="tel" class="form-input" id="contact-phone">
+                            </div>
+                            <div class="form-group full-width">
+                                <label class="form-label">Message</label>
+                                <textarea class="form-textarea" id="contact-message"></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <footer class="main-footer">
+            <div class="footer-container">
+                <div class="footer-grid">
+                    <div class="footer-column">
+                        <h3 class="footer-title">Seasonal Soldiers LTD</h3>
+                        <p class="footer-text">Your year-round property maintenance specialists since 2015</p>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-title">Quick Links</h3>
+                        <div class="footer-links">
+                            <a href="#services" class="footer-link">Services</a>
+                            <a href="projects.html" class="footer-link">Projects</a>
+                            <a href="about.html" class="footer-link">About</a>
+                            <a href="#contact" class="footer-link">Contact</a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-title">Services</h3>
+                        <div class="footer-links">
+                            <a href="#" class="footer-link">Spring Cleanups</a>
+                            <a href="#" class="footer-link">Lawn Mowing</a>
+                            <a href="#" class="footer-link">Snow Removal</a>
+                            <a href="#" class="footer-link">Emergency Services</a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h3 class="footer-title">Contact</h3>
+                        <div class="footer-contact">
+                            <p class="footer-text">(555) 123-4567</p>
+                            <p class="footer-text">contact@seasonalsoldiers.com</p>
+                            <p class="footer-text">
+                                <span>123 Seasonal Lane</span><br>
+                                <span>Winter City, ST 12345</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    © 2024 Seasonal Soldiers LTD. All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+        <div class="quote-modal" id="quote-modal" hidden>
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h3 class="modal-title">Request a Quote</h3>
+                  <button class="close-modal" aria-label="Close modal">
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="close-icon">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                      </svg>
+                  </button>
+              </div>
+              <form class="modal-form">
+                  <div class="modal-form-grid">
+                      <div class="form-group">
+                          <label class="form-label">Name</label>
+                          <input type="text" class="form-input" id="quote-name" required>
+                      </div>
+                      <div class="form-group">
+                          <label class="form-label">Email</label>
+                          <input type="email" class="form-input" id="quote-email" required>
+                      </div>
+                      <div class="form-group">
+                          <label class="form-label">Phone</label>
+                          <input type="tel" class="form-input" id="quote-phone" required>
+                      </div>
+                      <div class="form-group">
+                          <label class="form-label">Service Needed</label>
+                          <select class="form-input" id="quote-service" required>
+                              <option value="">Select a Service</option>
+                              <option value="spring-cleanup">Spring Cleanup</option>
+                              <option value="lawn-mowing">Weekly Lawn Mowing</option>
+                              <option value="snow-removal">Snow Removal</option>
+                          </select>
+                      </div>
+                      <div class="form-group full-width">
+                          <label class="form-label">Message</label>
+                          <textarea class="form-textarea" id="quote-message" rows="4" required></textarea>
+                      </div>
+                  </div>
+                  <button type="submit" class="submit-button">Submit Request</button>
+              </form>
           </div>
         </div>
-      </section>
-
-      <section id="contact" class="contact-section">
-        <div class="section-container">
-          <h2 class="section-title">Contact Us</h2>
-          <div class="contact-container">
-            <div class="contact-info">
-              <h3 class="contact-title">Get in Touch</h3>
-              <p class="contact-description">
-                Ready to transform your outdoor space? Contact us today for a
-                free consultation.
-              </p>
-              <div class="contact-detail">
-                <p class="detail-label">Address</p>
-                <p class="detail-value">
-                  123 Landscape Lane, Garden City, ST 12345
-                </p>
-              </div>
-              <div class="contact-detail">
-                <p class="detail-label">Phone</p>
-                <p class="detail-value">(555) 123-4567</p>
-              </div>
-              <div class="contact-detail">
-                <p class="detail-label">Email</p>
-                <p class="detail-value">info@onehomeservices.com</p>
-              </div>
-            </div>
-            <form class="contact-form">
-              <div class="form-grid">
-                <div class="form-group full-width">
-                  <label class="form-label">Name</label>
-                  <input type="text" class="form-input" id="contact-name" />
-                </div>
-                <div class="form-group">
-                  <label class="form-label">Email</label>
-                  <input type="email" class="form-input" id="contact-email" />
-                </div>
-                <div class="form-group">
-                  <label class="form-label">Phone</label>
-                  <input type="tel" class="form-input" id="contact-phone" />
-                </div>
-                <div class="form-group full-width">
-                  <label class="form-label">Message</label>
-                  <textarea
-                    class="form-textarea"
-                    id="contact-message"
-                  ></textarea>
-                </div>
-              </div>
-              <button type="submit" class="submit-button">Send Message</button>
-            </form>
-          </div>
-        </div>
-      </section>
-
-      <footer class="main-footer">
-        <div class="footer-container">
-          <div class="footer-grid">
-            <div class="footer-column">
-              <h3 class="footer-title">OneHome Services</h3>
-              <p class="footer-text">
-                Creating beautiful outdoor spaces since 2008.
-              </p>
-            </div>
-            <div class="footer-column">
-              <h3 class="footer-title">Quick Links</h3>
-              <div class="footer-links">
-                <a href="#services" class="footer-link">Services</a>
-                <a href="#portfolio" class="footer-link">Portfolio</a>
-                <a href="#about" class="footer-link">About</a>
-                <a href="#contact" class="footer-link">Contact</a>
-              </div>
-            </div>
-            <div class="footer-column">
-              <h3 class="footer-title">Services</h3>
-              <div class="footer-links">
-                <a href="#" class="footer-link">Landscape Design</a>
-                <a href="#" class="footer-link">Garden Maintenance</a>
-                <a href="#" class="footer-link">Hardscaping</a>
-                <a href="#" class="footer-link">Irrigation Systems</a>
-              </div>
-            </div>
-            <div class="footer-column">
-              <h3 class="footer-title">Contact</h3>
-              <div class="footer-contact">
-                <p class="footer-text">(555) 123-4567</p>
-                <p class="footer-text">info@onehomeservices.com</p>
-                <p class="footer-text">
-                  <span>123 Landscape Lane</span>
-                  <br />
-                  <span>Garden City, ST 12345</span>
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="copyright">
-            © 2024 OneHome Services All rights reserved.
-          </div>
-        </div>
-      </footer>
-
-      <div class="quote-modal" id="quote-modal" hidden>
-        <div class="modal-content">
-          <div class="modal-header">
-            <h3 class="modal-title">Request a Quote</h3>
-            <button class="close-modal" aria-label="Close modal">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                class="close-icon"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M6 18L18 6M6 6l12 12"
-                ></path>
-              </svg>
-            </button>
-          </div>
-          <form class="modal-form">
-            <div class="modal-form-grid">
-              <div class="form-group">
-                <label class="form-label">Name</label>
-                <input type="text" class="form-input" id="quote-name" />
-              </div>
-              <div class="form-group">
-                <label class="form-label">Email</label>
-                <input type="email" class="form-input" id="quote-email" />
-              </div>
-              <div class="form-group">
-                <label class="form-label">Phone</label>
-                <input type="tel" class="form-input" id="quote-phone" />
-              </div>
-              <div class="form-group">
-                <label class="form-label">Message</label>
-                <textarea class="form-textarea" id="quote-message"></textarea>
-              </div>
-            </div>
-            <button type="submit" class="submit-button">Submit Request</button>
-          </form>
-        </div>
-      </div>
-    </div>
-
     <script src="script.js"></script>
-  </body>
+</body>
 </html>

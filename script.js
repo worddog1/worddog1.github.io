@@ -29,40 +29,29 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     };
 
-    // DOM Elements
+    // DOM Elements with null safety
     const menuToggle = document.querySelector(".menu-toggle");
     const mobileMenu = document.querySelector(".mobile-menu");
     const quoteButtons = document.querySelectorAll(".quote-button");
     const ctaButton = document.querySelector(".cta-button");
     const quoteModal = document.getElementById("quote-modal");
+    
+    // Optional elements (may be null)
     const testimonialText = document.getElementById("testimonial-text");
     const testimonialName = document.getElementById("testimonial-name");
     const testimonialRole = document.getElementById("testimonial-role");
     const testimonialDotsContainer = document.querySelector(".testimonial-dots");
-
-    // Contact form elements
     const contactForm = document.querySelector(".contact-form");
-    const contactName = document.getElementById("contact-name");
-    const contactEmail = document.getElementById("contact-email");
-    const contactPhone = document.getElementById("contact-phone");
-    const contactMessage = document.getElementById("contact-message");
-
-    // Quote form elements
     const quoteForm = document.querySelector(".modal-form");
-    const quoteName = document.getElementById("quote-name");
-    const quoteEmail = document.getElementById("quote-email");
-    const quotePhone = document.getElementById("quote-phone");
-    const quoteMessage = document.getElementById("quote-message");
 
-    // Initialize testimonials
+    // Initialize testimonials safely
     function initTestimonials() {
-        // Create dots for testimonials
+        if (!testimonialDotsContainer || !testimonialText) return;
+
         state.testimonials.forEach((_, index) => {
             const dot = document.createElement("button");
             dot.classList.add("testimonial-dot");
-            if (index === state.activeTestimonial) {
-                dot.classList.add("active");
-            }
+            if (index === state.activeTestimonial) dot.classList.add("active");
             dot.setAttribute("aria-label", `View testimonial ${index + 1}`);
             dot.addEventListener("click", () => {
                 state.activeTestimonial = index;
@@ -70,70 +59,58 @@ document.addEventListener("DOMContentLoaded", function () {
             });
             testimonialDotsContainer.appendChild(dot);
         });
-
-        // Set initial testimonial
         updateTestimonials();
     }
 
-    // Update testimonials display
     function updateTestimonials() {
-        const currentTestimonial = state.testimonials[state.activeTestimonial];
-        testimonialText.textContent = currentTestimonial.text;
-        testimonialName.textContent = currentTestimonial.name;
-        testimonialRole.textContent = currentTestimonial.role;
+        if (!testimonialText || !testimonialName || !testimonialRole) return;
+        
+        const current = state.testimonials[state.activeTestimonial];
+        testimonialText.textContent = current.text;
+        testimonialName.textContent = current.name;
+        testimonialRole.textContent = current.role;
 
-        // Update active dot
-        const dots = document.querySelectorAll(".testimonial-dot");
-        dots.forEach((dot, index) => {
+        document.querySelectorAll(".testimonial-dot").forEach((dot, index) => {
             dot.classList.toggle("active", index === state.activeTestimonial);
         });
     }
 
-    // Toggle mobile menu
+    // Mobile menu functions
     function toggleMobileMenu() {
+        if (!mobileMenu) return;
         state.isMenuOpen = !state.isMenuOpen;
         mobileMenu.hidden = !state.isMenuOpen;
     }
 
-    // Show quote modal
+    // Modal functions
     function showQuoteModal() {
+        if (!quoteModal) return;
         quoteModal.removeAttribute('hidden');
         document.body.style.overflow = 'hidden';
-        quoteName.focus();
+        document.getElementById("quote-name")?.focus();
     }
 
-    // Hide quote modal
     function hideQuoteModal() {
+        if (!quoteModal) return;
         quoteModal.setAttribute('hidden', '');
         document.body.style.overflow = '';
     }
 
-    // Handle all close buttons
     function setupCloseModal() {
         document.querySelectorAll('.close-modal').forEach(button => {
             button.addEventListener('click', hideQuoteModal);
         });
     }
 
-    // Handle form submission
+    // Form handling
     function handleFormSubmit(event, isQuoteForm = false) {
         event.preventDefault();
         const formElements = isQuoteForm ? 
-            [quoteName, quoteEmail, quotePhone, quoteMessage] : 
-            [contactName, contactEmail, contactPhone, contactMessage];
+            [document.getElementById("quote-name"), document.getElementById("quote-email"), document.getElementById("quote-phone"), document.getElementById("quote-message")] : 
+            [document.getElementById("contact-name"), document.getElementById("contact-email"), document.getElementById("contact-phone"), document.getElementById("contact-message")];
 
-        // Get form data
-        const formData = {
-            name: formElements[0].value,
-            email: formElements[1].value,
-            phone: formElements[2].value,
-            message: formElements[3].value,
-        };
-
-        // Reset form
         formElements.forEach(element => element.value = "");
-
-        // Show confirmation
+        
         if (isQuoteForm) {
             hideQuoteModal();
             alert("Thank you for your request! We'll contact you shortly.");
@@ -142,34 +119,22 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Event Listeners
-    menuToggle.addEventListener("click", toggleMobileMenu);
+    // Event listeners
+    if (menuToggle) menuToggle.addEventListener("click", toggleMobileMenu);
+    quoteButtons.forEach(button => button.addEventListener("click", showQuoteModal));
+    if (ctaButton) ctaButton.addEventListener("click", showQuoteModal);
+    
+    if (quoteModal) {
+        quoteModal.addEventListener("click", (event) => {
+            if (event.target === quoteModal) hideQuoteModal();
+        });
+    }
 
-    quoteButtons.forEach(button => {
-        button.addEventListener("click", showQuoteModal);
-    });
+    // Form submissions
+    if (contactForm) contactForm.addEventListener("submit", (e) => handleFormSubmit(e, false));
+    if (quoteForm) quoteForm.addEventListener("submit", (e) => handleFormSubmit(e, true));
 
-    ctaButton.addEventListener("click", showQuoteModal);
-
-    // Close modal when clicking outside
-    quoteModal.addEventListener("click", function (event) {
-        if (event.target === quoteModal) {
-            hideQuoteModal();
-        }
-    });
-
-    // Handle form submissions
-    contactForm.addEventListener("submit", (e) => handleFormSubmit(e, false));
-    quoteForm.addEventListener("submit", (e) => handleFormSubmit(e, true));
-
-    // Close modal with Escape key
-    document.addEventListener("keydown", (event) => {
-        if (event.key === "Escape" && !quoteModal.hidden) {
-            hideQuoteModal();
-        }
-    });
-
-    // Smooth scrolling for navigation links
+    // Smooth scrolling
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener("click", function (e) {
             e.preventDefault();
@@ -182,7 +147,12 @@ document.addEventListener("DOMContentLoaded", function () {
     // Initialize
     initTestimonials();
     setupCloseModal();
-    
-    // Ensure modal is hidden on initial load
-    hideQuoteModal();
+    hideQuoteModal(); // Ensure modal starts hidden
+
+    // Escape key listener
+    document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && quoteModal && !quoteModal.hidden) {
+            hideQuoteModal();
+        }
+    });
 });

@@ -46,6 +46,10 @@
     font-weight: 700;
     color: #2b7fe0;
   }
+
+  .logo-a {
+    text-decoration: none;
+  }
   
   .desktop-menu {
     display: flex;
