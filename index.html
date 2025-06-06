@@ -1,268 +1,365 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Seasonal Soldiers LTD - Professional Seasonal Maintenance</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="page-container">
-        <nav class="main-nav">
-            <div class="nav-container">
-                <div class="nav-left">
-                    <a href="index.html" class="logo-a"><h1 class="logo">Seasonal Soldiers LTD</h1></a>
-                    <div class="desktop-menu">
-                        <a href="#services" class="nav-link">Services</a>
-                        <a href="projects.html" class="nav-link">Projects</a>
-                        <a href="about.html" class="nav-link">About</a>
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </div>
-                </div>
-                <button class="quote-button">Get a Quote</button>
-                <button class="menu-toggle" aria-label="Toggle menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="menu-icon">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
+      <nav class="main-nav">
+        <div class="nav-container">
+          <div class="nav-left">
+            <a href="index.html" class="logo-a"
+              ><h1 class="logo">Seasonal Soldiers LTD</h1></a
+            >
+            <div class="desktop-menu">
+              <a href="#services" class="nav-link">Services</a>
+              <a href="projects.html" class="nav-link">Projects</a>
+              <a href="about.html" class="nav-link">About</a>
+              <a href="#contact" class="nav-link">Contact</a>
             </div>
-            <div class="mobile-menu" hidden>
-                <div class="mobile-menu-container">
-                    <a href="#services" class="nav-link">Services</a>
-                    <a href="projects.html" class="nav-link">Projects</a>
-                    <a href="about.html" class="nav-link">About</a>
-                    <a href="#contact" class="nav-link">Contact</a>
-                    <button class="quote-button">Get a Quote</button>
-                </div>
-            </div>
-        </nav>
-
-        <header class="hero">
-            <div class="hero-container">
-                <div class="hero-content">
-                    <h2 class="hero-title">Choose Your Service</h2>
-                    <p class="hero-description">
-                        Seasonal Soldiers offers two core services to keep your property looking its best year-round.
-                        Select the service you need and let us handle the rest.
-                    </p>
-                    <div class="service-choice-buttons">
-                        <button class="choice-button lawn-care" onclick="scrollToService('lawn-care')">
-                            <h3>Lawn Care</h3>
-                            <p>Starting at $180</p>
-                        </button>
-                        <button class="choice-button snow-removal" onclick="scrollToService('snow-removal')">
-                            <h3>Snow Removal</h3>
-                            <p>Starting at $220</p>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <section id="services" class="services-section">
-            <div class="section-container">
-                <h2 class="section-title">Our Services</h2>
-                <div class="main-services-grid">
-                    <div class="main-service-card" id="lawn-care">
-                        <img src="https://placehold.co/600x400" alt="Lawn Care Services" class="service-image">
-                        <div class="service-content">
-                            <h3 class="service-title">Lawn Care – Starting at $180</h3>
-                            <p class="service-description">
-                                Keep your yard looking its best with our premium lawn care services. Starting at just $180,
-                                we offer mowing, trimming, and seasonal maintenance tailored to your property's needs.
-                                Reliable, efficient, and always neat—let us handle the hard work so you can enjoy a
-                                beautiful lawn year-round.
-                            </p>
-                            <button class="service-cta-button">Get Lawn Care Quote</button>
-                        </div>
-                    </div>
-                    <div class="main-service-card" id="snow-removal">
-                        <img src="https://placehold.co/600x400" alt="Snow Removal Services" class="service-image">
-                        <div class="service-content">
-                            <h3 class="service-title">Snow Removal – Starting at $220</h3>
-                            <p class="service-description">
-                                Stay safe and stress-free this winter with our professional snow removal services.
-                                Starting at $220, we provide prompt and thorough clearing of driveways, walkways,
-                                and sidewalks. Reliable, efficient, and ready for any snowfall—count on us to keep
-                                your property clear all season long.
-                            </p>
-                            <button class="service-cta-button">Get Snow Removal Quote</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="portfolio" class="portfolio-section">
-            <div class="section-container">
-                <h2 class="section-title">Recent Work</h2>
-                <div class="portfolio-grid">
-                    <img src="https://placehold.co/400x400" alt="Residential Cleanup" class="portfolio-image">
-                    <img src="https://placehold.co/400x400" alt="Commercial Snow Removal" class="portfolio-image">
-                    <img src="https://placehold.co/400x400" alt="Landscape Maintenance" class="portfolio-image">
-                    <img src="https://placehold.co/400x400" alt="Seasonal Setup" class="portfolio-image">
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="about-section">
-            <div class="section-container">
-                <h2 class="section-title">Our Story</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p class="about-description">
-                            Seasonal Soldiers was founded by <strong>Luke Boman</strong> and <strong>Noah Letawsky</strong>,
-                            two longtime friends who grew up together in Sherwood Park. After graduating high school,
-                            they combined their work ethic and passion for outdoor work to start the company three years ago.
-                            What began as a small operation has grown into a trusted, locally-owned business known for
-                            reliable service, attention to detail, and strong community values.
-                        </p>
-                        <p class="about-description">
-                            At Seasonal Soldiers, we take pride in helping our neighbors keep their properties looking
-                            their best year-round—whether it's lush lawns in the summer or clear driveways in the winter.
-                            We're not just here to get the job done—we're here to do it right.
-                        </p>
-                    </div>
-                    <div class="about-image">
-                        <img src="https://placehold.co/500x400" alt="Luke Boman and Noah Letawsky - Seasonal Soldiers Founders" class="founders-image">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact-section">
-            <div class="section-container">
-                <h2 class="section-title">Contact Us</h2>
-                <div class="contact-container">
-                    <div class="contact-info">
-                        <h3 class="contact-title">Get in Touch</h3>
-                        <p class="contact-description">
-                            Ready to transform your outdoor space? Contact us today for a free consultation.
-                        </p>
-                        <div class="contact-detail">
-                            <p class="detail-label">Address</p>
-                            <p class="detail-value">123 Seasonal Lane, Winter City, ST 12345</p>
-                        </div>
-                        <div class="contact-detail">
-                            <p class="detail-label">Phone</p>
-                            <p class="detail-value">(555) 123-4567</p>
-                        </div>
-                        <div class="contact-detail">
-                            <p class="detail-label">Email</p>
-                            <p class="detail-value">contact@seasonalsoldiers.com</p>
-                        </div>
-                    </div>
-                    <form class="contact-form">
-                        <div class="form-grid">
-                            <div class="form-group full-width">
-                                <label class="form-label">Name</label>
-                                <input type="text" class="form-input" id="contact-name">
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">Email</label>
-                                <input type="email" class="form-input" id="contact-email">
-                            </div>
-                            <div class="form-group">
-                                <label class="form-label">Phone</label>
-                                <input type="tel" class="form-input" id="contact-phone">
-                            </div>
-                            <div class="form-group full-width">
-                                <label class="form-label">Message</label>
-                                <textarea class="form-textarea" id="contact-message"></textarea>
-                            </div>
-                        </div>
-                        <button type="submit" class="submit-button">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <footer class="main-footer">
-            <div class="footer-container">
-                <div class="footer-grid">
-                    <div class="footer-column">
-                        <h3 class="footer-title">Seasonal Soldiers LTD</h3>
-                        <p class="footer-text">Your year-round property maintenance specialists since 2015</p>
-                    </div>
-                    <div class="footer-column">
-                        <h3 class="footer-title">Quick Links</h3>
-                        <div class="footer-links">
-                            <a href="#services" class="footer-link">Services</a>
-                            <a href="projects.html" class="footer-link">Projects</a>
-                            <a href="about.html" class="footer-link">About</a>
-                            <a href="#contact" class="footer-link">Contact</a>
-                        </div>
-                    </div>
-                    <div class="footer-column">
-                        <h3 class="footer-title">Services</h3>
-                        <div class="footer-links">
-                            <a href="#" class="footer-link">Spring Cleanups</a>
-                            <a href="#" class="footer-link">Lawn Mowing</a>
-                            <a href="#" class="footer-link">Snow Removal</a>
-                            <a href="#" class="footer-link">Emergency Services</a>
-                        </div>
-                    </div>
-                    <div class="footer-column">
-                        <h3 class="footer-title">Contact</h3>
-                        <div class="footer-contact">
-                            <p class="footer-text">(555) 123-4567</p>
-                            <p class="footer-text">contact@seasonalsoldiers.com</p>
-                            <p class="footer-text">
-                                <span>123 Seasonal Lane</span><br>
-                                <span>Winter City, ST 12345</span>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="copyright">
-                    © 2024 Seasonal Soldiers LTD. All rights reserved.
-                </div>
-            </div>
-        </footer>
-
-        <div class="quote-modal" id="quote-modal" hidden>
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h3 class="modal-title">Request a Quote</h3>
-                  <button class="close-modal" aria-label="Close modal">
-                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="close-icon">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                      </svg>
-                  </button>
-              </div>
-              <form class="modal-form">
-                  <div class="modal-form-grid">
-                      <div class="form-group">
-                          <label class="form-label">Name</label>
-                          <input type="text" class="form-input" id="quote-name" required>
-                      </div>
-                      <div class="form-group">
-                          <label class="form-label">Email</label>
-                          <input type="email" class="form-input" id="quote-email" required>
-                      </div>
-                      <div class="form-group">
-                          <label class="form-label">Phone</label>
-                          <input type="tel" class="form-input" id="quote-phone" required>
-                      </div>
-                      <div class="form-group">
-                          <label class="form-label">Service Needed</label>
-                          <select class="form-input" id="quote-service" required>
-                              <option value="">Select a Service</option>
-                              <option value="spring-cleanup">Spring Cleanup</option>
-                              <option value="lawn-mowing">Weekly Lawn Mowing</option>
-                              <option value="snow-removal">Snow Removal</option>
-                          </select>
-                      </div>
-                      <div class="form-group full-width">
-                          <label class="form-label">Message</label>
-                          <textarea class="form-textarea" id="quote-message" rows="4" required></textarea>
-                      </div>
-                  </div>
-                  <button type="submit" class="submit-button">Submit Request</button>
-              </form>
+          </div>
+          <button class="quote-button">Get a Quote</button>
+          <button class="menu-toggle" aria-label="Toggle menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              class="menu-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="mobile-menu" hidden>
+          <div class="mobile-menu-container">
+            <a href="#services" class="nav-link">Services</a>
+            <a href="projects.html" class="nav-link">Projects</a>
+            <a href="about.html" class="nav-link">About</a>
+            <a href="#contact" class="nav-link">Contact</a>
+            <button class="quote-button">Get a Quote</button>
           </div>
         </div>
+      </nav>
+
+      <header class="hero">
+        <div class="hero-container">
+          <div class="hero-content">
+            <h2 class="hero-title">Choose Your Service</h2>
+            <p class="hero-description">
+              Seasonal Soldiers offers two core services to keep your property
+              looking its best year-round. Select the service you need and let
+              us handle the rest.
+            </p>
+            <div class="service-choice-buttons">
+              <button
+                class="choice-button lawn-care"
+                onclick="scrollToService('lawn-care')"
+              >
+                <h3>Lawn Care</h3>
+                <p>Starting at $180</p>
+              </button>
+              <button
+                class="choice-button snow-removal"
+                onclick="scrollToService('snow-removal')"
+              >
+                <h3>Snow Removal</h3>
+                <p>Starting at $220</p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section id="services" class="services-section">
+        <div class="section-container">
+          <h2 class="section-title">Our Services</h2>
+          <div class="main-services-grid">
+            <div class="main-service-card" id="lawn-care">
+              <img
+                src="https://placehold.co/600x400"
+                alt="Lawn Care Services"
+                class="service-image"
+              />
+              <div class="service-content">
+                <h3 class="service-title">Lawn Care – Starting at $180</h3>
+                <p class="service-description">
+                  Keep your yard looking its best with our premium lawn care
+                  services. Starting at just $180, we offer mowing, trimming,
+                  and seasonal maintenance tailored to your property's needs.
+                  Reliable, efficient, and always neat—let us handle the hard
+                  work so you can enjoy a beautiful lawn year-round.
+                </p>
+                <button class="service-cta-button">Get Lawn Care Quote</button>
+              </div>
+            </div>
+            <div class="main-service-card" id="snow-removal">
+              <img
+                src="https://placehold.co/600x400"
+                alt="Snow Removal Services"
+                class="service-image"
+              />
+              <div class="service-content">
+                <h3 class="service-title">Snow Removal – Starting at $220</h3>
+                <p class="service-description">
+                  Stay safe and stress-free this winter with our professional
+                  snow removal services. Starting at $220, we provide prompt and
+                  thorough clearing of driveways, walkways, and sidewalks.
+                  Reliable, efficient, and ready for any snowfall—count on us to
+                  keep your property clear all season long.
+                </p>
+                <button class="service-cta-button">
+                  Get Snow Removal Quote
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="portfolio-section">
+        <div class="section-container">
+          <h2 class="section-title">Recent Work</h2>
+          <div class="portfolio-grid">
+            <img
+              src="https://placehold.co/400x400"
+              alt="Residential Cleanup"
+              class="portfolio-image"
+            />
+            <img
+              src="https://placehold.co/400x400"
+              alt="Commercial Snow Removal"
+              class="portfolio-image"
+            />
+            <img
+              src="https://placehold.co/400x400"
+              alt="Landscape Maintenance"
+              class="portfolio-image"
+            />
+            <img
+              src="https://placehold.co/400x400"
+              alt="Seasonal Setup"
+              class="portfolio-image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about-section">
+        <div class="section-container">
+          <h2 class="section-title">Our Story</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <p class="about-description">
+                Seasonal Soldiers was founded by <strong>Luke Boman</strong> and
+                <strong>Noah Letawsky</strong>, two longtime friends who grew up
+                together in Sherwood Park. After graduating high school, they
+                combined their work ethic and passion for outdoor work to start
+                the company three years ago. What began as a small operation has
+                grown into a trusted, locally-owned business known for reliable
+                service, attention to detail, and strong community values.
+              </p>
+              <p class="about-description">
+                At Seasonal Soldiers, we take pride in helping our neighbors
+                keep their properties looking their best year-round—whether it's
+                lush lawns in the summer or clear driveways in the winter. We're
+                not just here to get the job done—we're here to do it right.
+              </p>
+            </div>
+            <div class="about-image">
+              <img
+                src="https://placehold.co/500x400"
+                alt="Luke Boman and Noah Letawsky - Seasonal Soldiers Founders"
+                class="founders-image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="section-container">
+          <h2 class="section-title">Contact Us</h2>
+          <div class="contact-container">
+            <div class="contact-info">
+              <h3 class="contact-title">Get in Touch</h3>
+              <p class="contact-description">
+                Ready to transform your outdoor space? Contact us today for a
+                free consultation.
+              </p>
+              <div class="contact-detail">
+                <p class="detail-label">Address</p>
+                <p class="detail-value">
+                  123 Seasonal Lane, Winter City, ST 12345
+                </p>
+              </div>
+              <div class="contact-detail">
+                <p class="detail-label">Phone</p>
+                <p class="detail-value">(555) 123-4567</p>
+              </div>
+              <div class="contact-detail">
+                <p class="detail-label">Email</p>
+                <p class="detail-value">contact@seasonalsoldiers.com</p>
+              </div>
+            </div>
+            <form class="contact-form">
+              <div class="form-grid">
+                <div class="form-group full-width">
+                  <label class="form-label">Name</label>
+                  <input type="text" class="form-input" id="contact-name" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Email</label>
+                  <input type="email" class="form-input" id="contact-email" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Phone</label>
+                  <input type="tel" class="form-input" id="contact-phone" />
+                </div>
+                <div class="form-group full-width">
+                  <label class="form-label">Message</label>
+                  <textarea
+                    class="form-textarea"
+                    id="contact-message"
+                  ></textarea>
+                </div>
+              </div>
+              <button type="submit" class="submit-button">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer class="main-footer">
+        <div class="footer-container">
+          <div class="footer-grid">
+            <div class="footer-column">
+              <h3 class="footer-title">Seasonal Soldiers LTD</h3>
+              <p class="footer-text">
+                Your year-round property maintenance specialists since 2015
+              </p>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer-title">Quick Links</h3>
+              <div class="footer-links">
+                <a href="#services" class="footer-link">Services</a>
+                <a href="projects.html" class="footer-link">Projects</a>
+                <a href="about.html" class="footer-link">About</a>
+                <a href="#contact" class="footer-link">Contact</a>
+              </div>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer-title">Services</h3>
+              <div class="footer-links">
+                <a href="#" class="footer-link">Lawn Care</a>
+                <a href="#" class="footer-link">Snow Removal</a>
+                <a href="#" class="footer-link">Emergency Services</a>
+                <a href="#" class="footer-link">Seasonal Packages</a>
+              </div>
+            </div>
+            <div class="footer-column">
+              <h3 class="footer-title">Contact</h3>
+              <div class="footer-contact">
+                <p class="footer-text">(555) 123-4567</p>
+                <p class="footer-text">contact@seasonalsoldiers.com</p>
+                <p class="footer-text">
+                  <span>123 Seasonal Lane</span><br />
+                  <span>Winter City, ST 12345</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="copyright">
+            © 2024 Seasonal Soldiers LTD. All rights reserved.
+          </div>
+        </div>
+      </footer>
+
+      <div class="quote-modal" id="quote-modal" hidden>
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Request a Quote</h3>
+            <button class="close-modal" aria-label="Close modal">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="close-icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <form class="modal-form">
+            <div class="modal-form-grid">
+              <div class="form-group">
+                <label class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-input"
+                  id="quote-name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-input"
+                  id="quote-email"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Phone</label>
+                <input
+                  type="tel"
+                  class="form-input"
+                  id="quote-phone"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Service Needed</label>
+                <select class="form-input" id="quote-service" required>
+                  <option value="">Select a Service</option>
+                  <option value="lawn-care">Lawn Care</option>
+                  <option value="snow-removal">Snow Removal</option>
+                </select>
+              </div>
+              <div class="form-group full-width">
+                <label class="form-label">Message</label>
+                <textarea
+                  class="form-textarea"
+                  id="quote-message"
+                  rows="4"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <button type="submit" class="submit-button">Submit Request</button>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
