@@ -57,9 +57,6 @@ body {
 }
 
 @media (max-width: 991px) {
-  .desktop-menu {
-    display: none;
-  }
 }
 
 .nav-link {
@@ -708,7 +705,7 @@ body {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 32px;
 }
 
@@ -827,18 +824,6 @@ body {
 @media (max-width: 768px) {
   .nav-container {
     padding: 12px 16px;
-  }
-
-  .desktop-menu {
-    display: none;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .mobile-menu {
-    display: block;
   }
 
   .hero-title {
