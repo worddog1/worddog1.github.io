@@ -40,7 +40,18 @@ document.addEventListener("DOMContentLoaded", function () {
   const contactForm = document.querySelector(".contact-form");
   const quoteForm = document.querySelector(".modal-form");
 
-  // Service choice scrolling function
+  // Scroll to services function
+  window.scrollToServices = function () {
+    const servicesElement = document.getElementById("services");
+    if (servicesElement) {
+      servicesElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
+  // Service choice scrolling function (kept for compatibility)
   window.scrollToService = function (serviceId) {
     const serviceElement = document.getElementById(serviceId);
     if (serviceElement) {
