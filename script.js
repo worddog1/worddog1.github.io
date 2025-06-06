@@ -30,8 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   // DOM Elements with null safety
-  const menuToggle = document.querySelector(".menu-toggle");
-  const mobileMenu = document.querySelector(".mobile-menu");
   const quoteButtons = document.querySelectorAll(".quote-button");
   const ctaButton = document.querySelector(".cta-button");
   const quoteModal = document.getElementById("quote-modal");
