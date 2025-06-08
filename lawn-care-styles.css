@@ -1,0 +1,282 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(
+    135deg,
+    #3c4142 0%,
+    #4a4a4a 25%,
+    #6b7c32 50%,
+    #d4d4aa 75%,
+    #f0f0f0 100%
+  );
+  min-height: 100vh;
+  color: #3c4142;
+}
+
+/* Container */
+.snow-removal-container {
+  min-height: 100vh;
+}
+
+/* Navigation */
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: rgba(240, 240, 240, 0.95);
+  backdrop-filter: blur(10px);
+}
+
+.back-link {
+  color: #4a4a4a;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.back-link:hover {
+  color: #3c4142;
+}
+
+.nav-phone {
+  color: #3c4142;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 10px 20px;
+  background: #d4d4aa;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.nav-phone:hover {
+  background: #6b7c32;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 80px 40px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-content {
+  background: rgba(240, 240, 240, 0.95);
+  padding: 60px 40px;
+  border-radius: 30px;
+  box-shadow: 0 20px 60px rgba(60, 65, 66, 0.3);
+}
+
+.service-title {
+  font-size: 48px;
+  font-weight: 800;
+  color: #3c4142;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.service-subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  color: #4a4a4a;
+  margin-bottom: 40px;
+}
+
+/* Phone Hero */
+.phone-hero {
+  margin: 40px 0;
+  padding: 30px;
+  background: linear-gradient(135deg, #d4d4aa 0%, #f0f0f0 100%);
+  border-radius: 20px;
+  border: 3px solid #6b7c32;
+}
+
+.hero-phone {
+  display: block;
+  font-size: 56px;
+  font-weight: 800;
+  color: #3c4142;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+  letter-spacing: 2px;
+}
+
+.hero-phone:hover {
+  color: #6b7c32;
+  transform: scale(1.05);
+}
+
+.phone-description {
+  font-size: 16px;
+  color: #4a4a4a;
+  font-weight: 500;
+}
+
+/* Service Details */
+.service-details {
+  margin: 40px 0;
+}
+
+.price-card {
+  background: linear-gradient(135deg, #6b7c32 0%, #4a4a4a 100%);
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(107, 124, 50, 0.4);
+}
+
+.price-card h3 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.service-list {
+  list-style: none;
+  text-align: left;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.service-list li {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+/* Main Call Button */
+.main-call-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+  color: white;
+  text-decoration: none;
+  padding: 20px 40px;
+  border-radius: 50px;
+  font-size: 22px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 25px rgba(72, 187, 120, 0.4);
+  margin-top: 20px;
+}
+
+.main-call-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 35px rgba(72, 187, 120, 0.6);
+  background: linear-gradient(135deg, #38a169 0%, #2f855a 100%);
+}
+
+/* Contact Section */
+.contact-section {
+  background: rgba(60, 65, 66, 0.95);
+  color: white;
+  text-align: center;
+  padding: 60px 40px;
+}
+
+.contact-section h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.contact-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.contact-phone {
+  display: inline-block;
+  background: linear-gradient(135deg, #6b7c32 0%, #4a4a4a 100%);
+  color: white;
+  text-decoration: none;
+  padding: 18px 35px;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(107, 124, 50, 0.4);
+}
+
+.contact-phone:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(107, 124, 50, 0.6);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .top-nav {
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .hero-section {
+    padding: 40px 20px;
+  }
+
+  .hero-content {
+    padding: 40px 25px;
+  }
+
+  .service-title {
+    font-size: 36px;
+  }
+
+  .service-subtitle {
+    font-size: 20px;
+  }
+
+  .hero-phone {
+    font-size: 44px;
+  }
+
+  .price-card h3 {
+    font-size: 28px;
+  }
+
+  .service-list li {
+    font-size: 16px;
+  }
+
+  .main-call-button {
+    font-size: 18px;
+    padding: 16px 32px;
+  }
+
+  .contact-section {
+    padding: 40px 20px;
+  }
+
+  .contact-section h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service-title {
+    font-size: 28px;
+  }
+
+  .hero-phone {
+    font-size: 36px;
+    letter-spacing: 1px;
+  }
+
+  .hero-content {
+    padding: 30px 20px;
+  }
+}
