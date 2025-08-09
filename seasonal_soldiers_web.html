@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Seasonal Soldiers — Local Lawn Care & Snow Removal</title>
+		<style>
+			:root {
+				--accent: #1e6f5c;
+				--accent-light: #2e8b74;
+				--muted: #6b7280;
+				--bg: #f5f7f6;
+				--card: #ffffff;
+				--shadow: 0 6px 20px rgba(0,0,0,0.08);
+			}
+			* { box-sizing: border-box; margin: 0; padding: 0; }
+			body {
+				font-family: 'Segoe UI', Tahoma, sans-serif;
+				background: var(--bg);
+				color: #1f2937;
+				line-height: 1.6;
+			}
+			header {
+				background: var(--card);
+				box-shadow: var(--shadow);
+				position: sticky;
+				top: 0;
+				z-index: 1000;
+			}
+			.header-inner {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				max-width: 1100px;
+				margin: 0 auto;
+				padding: 1rem;
+			}
+			.logo { font-size: 1.4rem; font-weight: bold; color: var(--accent); }
+			.main-nav ul { display: flex; gap: 1.5rem; list-style: none; }
+			.main-nav a { text-decoration: none; color: #1f2937; font-weight: 500; transition: color 0.2s; }
+			.main-nav a:hover { color: var(--accent); }
+			.hero {
+				background: linear-gradient(rgba(30,111,92,0.75), rgba(30,111,92,0.75)), url('https://images.unsplash.com/photo-1609710228471-8c13b5b2a1ab') center/cover no-repeat;
+				color: white;
+				text-align: center;
+				padding: 4rem 1rem;
+			}
+			.hero h2 { font-size: 2.5rem; margin-bottom: 1rem; }
+			.hero p { max-width: 600px; margin: 0 auto 1.5rem; }
+			.btn-primary {
+				display: inline-block;
+				padding: 0.8rem 1.5rem;
+				background: var(--accent);
+				color: white;
+				border-radius: 8px;
+				text-decoration: none;
+				font-weight: 600;
+				box-shadow: var(--shadow);
+				transition: background 0.2s, transform 0.2s;
+			}
+			.btn-primary:hover {
+				background: var(--accent-light);
+				transform: translateY(-2px);
+			}
+			section { max-width: 1100px; margin: 3rem auto; padding: 0 1rem; }
+			.services .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+			.card {
+				background: var(--card);
+				border-radius: 12px;
+				padding: 1.5rem;
+				box-shadow: var(--shadow);
+				transition: transform 0.2s, box-shadow 0.2s;
+			}
+			.card:hover { transform: translateY(-5px); box-shadow: 0 12px 25px rgba(0,0,0,0.12); }
+			.card h4 { margin-bottom: 0.5rem; color: var(--accent); }
+			.price { font-weight: bold; margin-bottom: 0.5rem; }
+			.about p { margin-bottom: 1rem; }
+			blockquote {
+				background: var(--card);
+				padding: 1.5rem;
+				border-left: 4px solid var(--accent);
+				font-style: italic;
+				box-shadow: var(--shadow);
+				border-radius: 8px;
+			}
+			.contact {
+				text-align: center;
+			}
+			.contact-info {
+				display: inline-block;
+				background: var(--card);
+				padding: 2rem;
+				border-radius: 12px;
+				box-shadow: var(--shadow);
+				max-width: 400px;
+			}
+			footer {
+				background: var(--card);
+				padding: 1rem;
+				text-align: center;
+				color: var(--muted);
+				box-shadow: var(--shadow);
+			}
+			@media (max-width: 768px) {
+				.main-nav { display: none; }
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="header-inner">
+				<div class="logo">Seasonal Soldiers</div>
+				<nav class="main-nav">
+					<ul>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section class="hero">
+			<h2>Local. Reliable. Owner-operated.</h2>
+			<p>Keep your property safe and looking great year-round with professional lawn care and snow removal in Sherwood Park.</p>
+			<a class="btn-primary" href="tel:7808869711">Call for a Free Quote</a>
+		</section>
+		<section id="services" class="services">
+			<h3>Our Services</h3>
+			<div class="grid">
+				<div class="card">
+					<h4>Snow Removal</h4>
+					<p class="price">Starting at CAD $210 / month</p>
+					<p>Keep your property safe and accessible this winter. Driveways, sidewalks, and parking areas — prompt, efficient service all season long.</p>
+				</div>
+				<div class="card">
+					<h4>Lawn Care</h4>
+					<p class="price">Starting at CAD $180 / month</p>
+					<p>Weekly mowing, trimming, edge work, and seasonal maintenance. Reliable service tailored to your yard.</p>
+				</div>
+				<div class="card">
+					<h4>Spring Cleanup</h4>
+					<p class="price">Starting at CAD $275</p>
+					<p>Power raking, core aeration, garden and rock bed blowouts, and debris removal to give your lawn a healthy start.</p>
+				</div>
+			</div>
+		</section>
+		<section id="about" class="about">
+			<h3>About Us</h3>
+			<p>We’re Luke Boman and Noah Letawsky — lifelong friends, proud Sherwood Park locals, and co-owners of Seasonal Soldiers, a fully owner-operated lawn care and snow removal business.</p>
+			<p>We started this company three years ago with one goal: to work for ourselves, grow something we could be proud of, and serve the community we’ve called home our entire lives.</p>
+			<p>What began as two friends with a mower and a shovel has grown into a reliable, trusted service focused on quality work and strong client relationships.</p>
+		</section>
+		<section class="testimonials">
+			<h3>What Clients Say</h3>
+			<blockquote>“Fast, friendly and reliable — Luke and Noah have taken great care of our lawn for two seasons.”</blockquote>
+		</section>
+		<section id="contact" class="contact">
+			<div class="contact-info">
+				<h3>Contact Us</h3>
+				<a class="btn-primary" href="tel:7808869711">📞 780-886-9711</a>
+			</div>
+		</section>
+		<footer>
+			<p>© <span id="year"></span> Seasonal Soldiers</p>
+		</footer>
+		<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+	</body>
+</html>
