@@ -28,24 +28,24 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/css/root.css">
-    <link rel="stylesheet" href="/css/local.css">
+    <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="/css/dark.css">
     <link rel="stylesheet" href="/css/dark-root-styles.css">
 
-    <title>Seasonal Soldiers</title>
+    <title></title>
 </head>
 <body>
 
-    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main</a>
+    <a class="skip" aria-label="skip to main content" href="index.html#main">Click To Skip To Main</a>
 
     <header>
 
         <!-- Mobile Nav Strip -->
         <div class="mobile-wrapper">
             <div class="mobile-nav container mobile-nav-container">
-                <img class="light" id="mobile-logo" src="/images/logo.svg" alt="mobile_company_logo" width="110" height="32">
+                <img class="light" id="mobile-logo" src="/images/logo.svg" alt="mobile_company_logo" height="60">
 
-                <img class="dark" id="mobile-logo" src="/images/logo-white.svg" alt="mobile_company_logo" width="110" height="32">
+                <img class="dark" id="mobile-logo" src="/images/logo-white.svg" alt="mobile_company_logo" height="60">
 
                 <!-- Hamburger Menu -->
                 <button aria-label="open the menu" id="menu-button" class="hamburger hamburger--spring" onclick="toggleNav()" type="button">
@@ -68,11 +68,10 @@
                         <img class="dark" aria-hidden="true" decoding="async" src="images/logo-white.svg" alt="compnay logo" height="80">
                     </a>
                     <ul id="on-top" class="navbar-links">
-                        <li class="nav-li"><a id="active-menu" href="index.html">Home</a></li>
-                        <li class="nav-li"><a class="link" href="/about.html">About</a></li>
+                        <li class="nav-li"><a class="link" href="/index.html">Home</a></li>
+                        <li class="nav-li"><a id="active-menu" class="link" href="/about.html">About</a></li>
                         <li class="nav-li"><a class="link" href="index.html#services">Services</a></li>
                         <!-- <li class="nav-li"><a class="link" href="html/portfolio.html">Portfolio</a></li> -->
-
                     </ul>
                 </div>
                 <button class="dark-mode-button top-dark-mode-button" aria-label="dark mode toggle">
@@ -89,66 +88,41 @@
         <!--                    LANDING                   -->
         <!-- ============================================ -->
     
-        <section id="hero">
-            <div class="hero-content">
-                <div class="heroText">
-                    <h1 id="home-h">Trusted service. Quality work.</h2>
-                    <p>
-                        We take pride in the high standards we’ve set. That means you’re getting people who genuinely care about the job, about your property, and about earning your trust.
-                    </p>
-                    <div class="buttons">
-                        <a class="button-solid" href="/about.html" >
-                            About Us
-                        </a>
-                        <a class="call-now" href="tel:555-213-9120">
-                            <img class="light" decoding="async" src="/images/phone.svg" alt="" aria-hidden="true" width="21" height="21">
-                            <img class="dark" decoding="async" src="/images/phone-dark.svg" alt="" aria-hidden="true" width="21" height="21">
-                            <div class="group">
-                                <span class="text">Call Now</span>
-                                <span class="number">(780) 886-9711</span>
-                            </div>
-                        </a>
-                    </div>
+        <section id="int-hero">
+            <h1 id="home-h">About Seasonal Soldiers</h2>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                     About                    -->
+        <!-- ============================================ -->
+    
+        <section id="about-content" class="section">
+            <div class="container">
+                <div class="image">
+                    <img decoding="async" src="/images/about-image.jpg" alt="" width="" height="">
                 </div>
-                <img decoding="async" src="/images/ryan-caselli.png" alt="" class="business-casual" width="" height="">
+                <div class="content">
+                    <span class="topper">Who We Are</span>
+                    <h2>We’re Luke Boman and Noah Letawsky, proud Sherwood Park locals.</h2>
+                    <div aria-hidden="true" class="decoration">
+                        <img src="/images/leaf.svg" alt="">
+                        <div class="line"></div>
+                    </div>
+                    <p>
+                        We started this company three years ago with one goal: to work for ourselves, grow something we could be proud of, and serve the community we’ve called home our entire lives. <br><br>
+                        What began as two friends with a mower and a shovel has grown into a reliable, trusted service focused on quality work and strong client relationships. We both enjoy being our own bosses and take pride in holding each other accountable to the high standards we’ve set. That means when you hire us, you’re getting two people who genuinely care—about the job, about your property, and about earning your trust. <br><br>
+                        Our business is built on consistency, attention to detail, and communication. Whether it’s a spring cleanup, weekly lawn care, or snow removal after a big storm, we treat every job like it’s our own yard. We’re committed to doing things right the first time and making sure every customer feels looked after. <br><br>
+                        Sherwood Park is our home, and we’re proud to keep it looking sharp year-round. When you support us, you’re supporting local.
+                    </p>
+                </div>
             </div>
         </section>
 
         <!-- ============================================ -->
-        <!--                  Services                    -->
+        <!--                     Staff                    -->
         <!-- ============================================ -->
-
-        <section id="services" class="section">
-            <div class="service">
-                <h2>Lawn Care Services<span> starting at $180 monthly</span></h2>
-                <p>
-                    From mowing and trimming to full seasonal upkeep, we offer reliable service tailored to your needs.
-                </p>
-                <a href="tel:555-213-9120" class="button-solid">Get in Touch</a>
-            </div>
-            <div class="service">
-                <h2>Snow Removal Services<span> starting at $210 monthly </span></h2>
-                <p>
-                   Whether it’s your driveway, sidewalks, or parking areas, we offer prompt, efficient service you can count on all season long. 
-                </p>
-                <a href="tel:555-213-9120" class="button-solid">Get in Touch</a>
-            </div>
-            <div class="service">
-                <h2>Spring Cleanup<span> starting at $275</span></h2>
-                <p>
-                    Services include power raking, core aeration, garden and rock bed blowouts, and full debris removal. Give your lawn the healthy head start it needs.
-                </p>
-                <a href="tel:555-213-9120" class="button-solid">Get in Touch</a>
-            </div>
-        </section>
-
-        <!-- ============================================ -->
-        <!--                   About                      -->
-        <!-- ============================================ -->
-
+    
         
-        
-    </main>
 
     <!-- ============================================ -->
     <!--                     FOOTER                   -->
