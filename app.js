@@ -84,6 +84,6 @@ if (darkMode !== "enabled") {
   enableDarkMode();
 } else {
   // if dark mode is enabled, run this function to set it to disabled
-  disableDarkMode();
+  enableDarkMode();
 }
 })
