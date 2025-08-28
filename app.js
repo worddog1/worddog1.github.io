@@ -50,7 +50,7 @@ var body = document.querySelector("body");
 
 // Dark Mode Action
 let darkMode = localStorage.getItem("darkMode");
-const darkModeToggle = document.querySelector('.dark-mode-button');
+const darkModeToggle = true;
 // for an optional footer dark mode button as well
 const darkModeToggleFooter = document.querySelector('footer .dark-mode-button');
 
@@ -69,6 +69,10 @@ const disableDarkMode = () => {
 
 body.classList.remove("dark-mode");
 localStorage.setItem("darkMode", null)
+}
+
+if (darkMode == "disabled") {
+enableDarkMode();
 }
 
 if (darkMode == "enabled") {
