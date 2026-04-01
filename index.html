@@ -1,195 +1,830 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Seasonal Soldiers | Lawn Care, Snow Removal & Spring Cleanup in Sherwood Park</title>
+	<link rel="icon" href="favicon.ico" sizes="any">
+	<meta name="robots" content="index, follow" />
+	<link rel="canonical" href="https://www.seasonalsoldiers.com/" />
+	<meta property="og:title" content="Seasonal Soldiers | Lawn Care, Snow Removal & Spring Cleanup in Sherwood Park" />
+	<meta property="og:description" content="Reliable lawn care, snow removal, and spring cleanup in Sherwood Park, Alberta. Call Seasonal Soldiers for a fast quote." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://www.seasonalsoldiers.com/" />
+	<meta property="og:image" content="https://www.seasonalsoldiers.com/logo.png" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Seasonal Soldiers | Lawn Care, Snow Removal & Spring Cleanup in Sherwood Park" />
+	<meta name="twitter:description" content="Reliable lawn care, snow removal, and spring cleanup in Sherwood Park, Alberta. Call Seasonal Soldiers for a fast quote." />
+	<meta name="twitter:image" content="https://www.seasonalsoldiers.com/logo.png" />
+	<meta
+		name="description"
+		content="Seasonal Soldiers provides lawn care, snow removal, and spring cleanup in Sherwood Park, Alberta. Call for a fast quote today."
+	/>
+	<style>
+		:root {
+			--bg: #f8fafc;
+			--surface: #ffffff;
+			--surface-alt: #f1f5f9;
+			--text: #0f172a;
+			--muted: #475569;
+			--line: #e2e8f0;
+			--dark: #0f172a;
+			--primary: #059669;
+			--primary-dark: #047857;
+			--primary-soft: #ecfdf5;
+			--shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+			--radius-xl: 32px;
+			--radius-lg: 24px;
+			--radius-md: 16px;
+			--max: 1200px;
+		}
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		* {
+			box-sizing: border-box;
+		}
 
-    <link rel="canonical" href="">
+		html {
+			scroll-behavior: smooth;
+		}
 
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+		body {
+			margin: 0;
+			font-family: Inter, Arial, Helvetica, sans-serif;
+			background: var(--bg);
+			color: var(--text);
+			line-height: 1.6;
+		}
 
-    <!--Social Media Display-->
-    <meta property="og:title" content=""/>
-    <meta property="og:description" content=""/>
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content=""/>
-    <meta property="og:image" content=""/>
-    <meta property="og:image:secure_url" content=""/>
+		a {
+			color: inherit;
+			text-decoration: none;
+		}
 
-    <!--Favicons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico">
-    <link rel="manifest" href="/site.webmanifest">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+		img {
+			max-width: 100%;
+			display: block;
+		}
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="/css/root.css">
-    <link rel="stylesheet" href="/css/local.css">
-    <link rel="stylesheet" href="/css/dark.css">
-    <link rel="stylesheet" href="/css/dark-root-styles.css">
+		.container {
+			width: min(var(--max), calc(100% - 32px));
+			margin: 0 auto;
+		}
 
-    <title>Seasonal Soldiers - Home</title>
+		#services {
+			background: url('background.png') center/cover no-repeat;
+		}
+
+		.section {
+			padding: 88px 0;
+		}
+
+		.section-tight {
+			padding: 72px 0;
+		}
+
+		.mobile-callbar {
+			display: none;
+			position: fixed;
+			left: 12px;
+			right: 12px;
+			bottom: 12px;
+			z-index: 50;
+		}
+
+		.mobile-callbar .btn {
+			width: 100%;
+			box-shadow: 0 16px 30px rgba(5, 150, 105, 0.22);
+		}
+
+		.section {
+			padding: 88px 0;
+		}
+
+		.eyebrow {
+			display: inline-block;
+			padding: 10px 16px;
+			border-radius: 999px;
+			background: var(--primary-soft);
+			color: var(--primary-dark);
+			font-size: 0.875rem;
+			font-weight: 700;
+			letter-spacing: 0.08em;
+			text-transform: uppercase;
+		}
+
+		.btn-row {
+			display: flex;
+			gap: 14px;
+			flex-wrap: wrap;
+		}
+
+		.btn {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			padding: 14px 24px;
+			border-radius: 16px;
+			font-weight: 700;
+			transition: 0.2s ease;
+			border: 1px solid transparent;
+		}
+
+		.btn:hover {
+			transform: translateY(-1px);
+		}
+
+		.btn-primary {
+			background: var(--primary);
+			color: #fff;
+			box-shadow: 0 16px 30px rgba(5, 150, 105, 0.22);
+		}
+
+		.btn-primary:hover {
+			background: var(--primary-dark);
+		}
+
+		.btn-secondary {
+			background: var(--surface);
+			border-color: var(--line);
+		}
+
+		header.hero-shell {
+			position: relative;
+			overflow: hidden;
+			background:
+				radial-gradient(circle at top left, rgba(16, 185, 129, 0.14), transparent 35%),
+				radial-gradient(circle at top right, rgba(14, 165, 233, 0.12), transparent 28%),
+				#ffffff;
+			border-bottom: 1px solid var(--line);
+		}
+
+		.topbar {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 20px;
+			padding: 26px 0 12px;
+		}
+
+		.brand {
+			font-weight: 900;
+			font-size: 1.25rem;
+		}
+
+		.brand small {
+			display: block;
+			font-size: 0.9rem;
+			font-weight: 500;
+			color: var(--muted);
+		}
+
+		nav {
+			display: flex;
+			gap: 10px;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+
+		nav a {
+			padding: 10px 14px;
+			border-radius: 999px;
+			color: var(--muted);
+			font-weight: 600;
+			transition: background 0.2s ease, color 0.2s ease;
+		}
+
+		nav a:hover {
+			background: var(--surface-alt);
+			color: var(--text);
+		}
+
+		.hero-grid {
+			display: grid;
+			grid-template-columns: 1.15fr 0.85fr;
+			gap: 36px;
+			align-items: center;
+			padding: 32px 0 72px;
+		}
+
+		.hero-copy h1 {
+			font-size: clamp(2.5rem, 5vw, 4.5rem);
+			line-height: 1.05;
+			letter-spacing: -0.03em;
+			margin: 18px 0;
+		}
+
+		.hero-copy p {
+			font-size: 1.125rem;
+			max-width: 680px;
+			color: var(--muted);
+			margin-bottom: 28px;
+		}
+
+		.highlight-grid {
+			display: grid;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: 14px;
+			margin-top: 28px;
+			max-width: 700px;
+		}
+
+		.highlight {
+			background: var(--surface);
+			border: 1px solid var(--line);
+			border-radius: 18px;
+			padding: 16px 18px;
+			font-weight: 600;
+			box-shadow: 0 8px 20px rgba(15, 23, 42, 0.04);
+		}
+
+		.quote-card {
+			background: var(--surface);
+			border: 1px solid var(--line);
+			border-radius: var(--radius-xl);
+			padding: 18px;
+			box-shadow: var(--shadow);
+		}
+
+		.quote-card-inner {
+			background: var(--dark);
+			color: #fff;
+			border-radius: 24px;
+			padding: 28px;
+		}
+
+		.quote-card h2 {
+			margin: 12px 0 8px;
+			font-size: 1.9rem;
+		}
+
+		.form-mock,
+		.form-grid {
+			display: grid;
+			gap: 12px;
+		}
+
+		.field {
+			padding: 14px 16px;
+			border-radius: 16px;
+			background: rgba(255, 255, 255, 0.1);
+			color: rgba(255, 255, 255, 0.78);
+			font-size: 0.95rem;
+		}
+
+		.section-head {
+			background: rgba(255,255,255,0.9);
+			padding: 28px 32px;
+			border-radius: 20px;
+			box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+			backdrop-filter: blur(6px);
+		}
+
+		.section-head {
+			max-width: 760px;
+			margin-bottom: 40px;
+		}
+
+		.section-head h2 {
+			font-size: clamp(2rem, 4vw, 3.25rem);
+			line-height: 1.08;
+			letter-spacing: -0.03em;
+			margin: 14px 0;
+		}
+
+		.section-head p {
+			font-size: 1.05rem;
+			color: var(--muted);
+		}
+
+		.card-grid {
+			display: grid;
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+			gap: 24px;
+		}
+
+		.card {
+			background: var(--surface);
+			border: 1px solid var(--line);
+			border-radius: var(--radius-xl);
+			padding: 28px;
+			box-shadow: 0 10px 24px rgba(15, 23, 42, 0.05);
+		}
+
+		.card h3 {
+			font-size: 1.7rem;
+			margin: 10px 0 12px;
+		}
+
+		.price {
+			font-size: 0.9rem;
+			font-weight: 800;
+			color: var(--primary-dark);
+			text-transform: uppercase;
+			letter-spacing: 0.08em;
+		}
+
+		.feature-list {
+			list-style: none;
+			padding: 0;
+			margin: 20px 0 24px;
+		}
+
+		.feature-list li {
+			position: relative;
+			padding-left: 22px;
+			margin-bottom: 12px;
+			color: var(--muted);
+		}
+
+		.feature-list li::before {
+			content: "";
+			position: absolute;
+			left: 0;
+			top: 10px;
+			width: 9px;
+			height: 9px;
+			border-radius: 50%;
+			background: var(--primary);
+		}
+
+		.alt-band {
+			background: var(--surface);
+			border-top: 1px solid var(--line);
+			border-bottom: 1px solid var(--line);
+		}
+
+		.two-col {
+			display: grid;
+			grid-template-columns: 0.9fr 1.1fr;
+			gap: 28px;
+			align-items: start;
+		}
+
+		.benefit-grid {
+			display: grid;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: 16px;
+		}
+
+		.benefit {
+			padding: 20px;
+			border-radius: 24px;
+			background: var(--surface-alt);
+			border: 1px solid var(--line);
+			font-weight: 700;
+		}
+
+		.review-grid {
+			display: grid;
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+			gap: 24px;
+		}
+
+		.review {
+			background: var(--surface);
+			border: 1px solid var(--line);
+			border-radius: var(--radius-xl);
+			padding: 28px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			height: 100%;
+		}
+
+				.review p {
+			color: var(--muted);
+			margin: 0 0 12px;
+		}
+
+		.review strong {
+			display: block;
+			margin-top: 18px;
+		}
+
+		.cta-band {
+			background: var(--dark);
+			color: #fff;
+		}
+
+		.cta-grid {
+			display: grid;
+			grid-template-columns: 1fr 0.9fr;
+			gap: 32px;
+			align-items: start;
+		}
+
+		.contact-grid {
+			display: grid;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: 16px;
+			margin-top: 28px;
+		}
+
+		.contact-box {
+			background: rgba(255, 255, 255, 0.06);
+			border-radius: 20px;
+			padding: 20px;
+		}
+
+		.contact-box span {
+			display: block;
+			font-size: 0.9rem;
+			color: rgba(255, 255, 255, 0.68);
+		}
+
+		.contact-box strong {
+			display: block;
+			margin-top: 6px;
+			font-size: 1.15rem;
+		}
+
+		.real-form {
+			background: rgba(255, 255, 255, 0.05);
+			border: 1px solid rgba(255, 255, 255, 0.1);
+			border-radius: var(--radius-xl);
+			padding: 24px;
+		}
+
+		.real-form label {
+			display: block;
+			font-size: 0.92rem;
+			font-weight: 600;
+			margin-bottom: 8px;
+		}
+
+		.real-form input,
+		.real-form select,
+		.real-form textarea {
+			width: 100%;
+			padding: 14px 16px;
+			border-radius: 16px;
+			border: 1px solid rgba(255, 255, 255, 0.14);
+			background: rgba(255, 255, 255, 0.08);
+			color: #fff;
+			font: inherit;
+		}
+
+		.real-form textarea {
+			min-height: 140px;
+			resize: vertical;
+		}
+
+		.real-form ::placeholder {
+			color: rgba(255, 255, 255, 0.58);
+		}
+
+		.real-form .btn {
+			width: 100%;
+			margin-top: 8px;
+		}
+
+		footer {
+			padding: 28px 0 48px;
+			color: var(--muted);
+			font-size: 0.95rem;
+		}
+
+		@media (max-width: 1100px) {
+			.hero-grid {
+				grid-template-columns: 1fr;
+				gap: 28px;
+				padding: 24px 0 56px;
+			}
+
+			.hero-copy p,
+			.section-head,
+			.two-col > div:last-child {
+				max-width: 100%;
+			}
+		}
+
+		@media (max-width: 980px) {
+			.hero-grid,
+			.card-grid,
+			.two-col,
+			.review-grid,
+			.cta-grid {
+				grid-template-columns: 1fr;
+			}
+
+			.benefit-grid,
+			.contact-grid,
+			.highlight-grid {
+				grid-template-columns: 1fr;
+			}
+
+			.topbar {
+				padding: 20px 0 10px;
+			}
+
+			.hero-copy h1 {
+				font-size: clamp(2.5rem, 7vw, 4rem);
+			}
+
+			.section,
+			.section-tight {
+				padding: 72px 0;
+			}
+		}
+
+		@media (max-width: 700px) {
+			.container {
+				width: min(var(--max), calc(100% - 24px));
+			}
+
+			.topbar {
+				flex-direction: column;
+				align-items: flex-start;
+				gap: 12px;
+			}
+
+			nav {
+				width: 100%;
+				gap: 8px;
+			}
+
+			nav a {
+				padding: 8px 12px;
+				font-size: 0.95rem;
+			}
+
+			.section,
+			.section-tight {
+				padding: 56px 0;
+			}
+
+			.hero-grid {
+				padding: 20px 0 44px;
+			}
+
+			.hero-copy h1 {
+				font-size: clamp(2.25rem, 10vw, 3.25rem);
+				line-height: 1.02;
+				margin: 14px 0;
+			}
+
+			.hero-copy p,
+			.section-head p,
+			.review p,
+			.benefit,
+			.feature-list li,
+			body {
+				font-size: 1rem;
+			}
+
+			.quote-card,
+			.card,
+			.review,
+			.benefit {
+				padding: 20px;
+				border-radius: 22px;
+			}
+
+			.quote-card-inner {
+				padding: 22px;
+				border-radius: 20px;
+			}
+
+			.quote-card h2,
+			.section-head h2,
+			#why-us h2,
+			#about h2,
+			#reviews h2 {
+				font-size: clamp(1.9rem, 8vw, 2.5rem) !important;
+			}
+
+			.mobile-callbar {
+				display: block;
+			}
+
+			footer {
+				padding-bottom: 92px;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.highlight,
+			.contact-box {
+				padding: 14px 16px;
+			}
+
+			.brand img {
+				height: 42px !important;
+			}
+		}
+	</style>
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "LocalBusiness",
+		"name": "Seasonal Soldiers",
+		"url": "https://www.seasonalsoldiers.com/",
+		"telephone": "+1-780-886-9711",
+		"image": "https://www.seasonalsoldiers.com/logo.png",
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "Sherwood Park",
+			"addressRegion": "AB",
+			"addressCountry": "CA"
+		},
+		"areaServed": "Sherwood Park, Alberta",
+		"description": "Seasonal Soldiers provides lawn care, snow removal, and spring cleanup in Sherwood Park, Alberta.",
+		"sameAs": []
+	}
+	</script>
 </head>
 <body>
+	<header class="hero-shell">
+		<div class="container">
+			<div class="topbar">
+				<div class="brand" style="display:flex; align-items:center; gap:12px;">
+					<img src="logo.png" alt="Seasonal Soldiers logo" style="height:48px; width:auto;" />
+				</div>
+				<nav>
+					<a href="#services">Services</a>
+					<a href="#why-us">Why Us</a>
+					<a href="#about">About</a>
+					<a href="#reviews">Reviews</a>
+				</nav>
+			</div>
 
-    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main</a>
+			<div class="hero-grid">
+				<div class="hero-copy">
+					<span class="eyebrow">Local lawn care, snow removal, and seasonal cleanup</span>
+					<h1>Reliable property care for every season in Sherwood Park</h1>
+					<p>
+						Professional lawn care, snow removal, and spring cleanup with clear starting prices,
+						fast communication, and dependable service for homeowners and small properties.
+					</p>
+					
+					<div class="highlight-grid">
+						<div class="highlight">Sherwood Park local service</div>
+						<div class="highlight">Clear starting prices</div>
+						<div class="highlight">Fast response by phone</div>
+						<div class="highlight">Seasonal property care</div>
+					</div>
+				</div>
 
-    <header>
+				<div class="quote-card">
+					<div class="quote-card-inner">
+						<span class="eyebrow" style="background: rgba(16, 185, 129, 0.18); color: #a7f3d0;">Call for a fast quote</span>
+						<h2>Speak with us directly</h2>
+						<p style="color: rgba(255,255,255,0.75); margin-bottom: 18px;">
+							The quickest way to get a quote is by calling us. We’ll go over your property and give you clear next steps.
+						</p>
+						<div class="btn-row" style="margin-top: 8px;">
+							<a class="btn btn-primary" href="tel:7808869711" style="width:100%;">Call (780) 886-9711</a>
+						</div>
+						<p style="margin-top:14px; color: rgba(255,255,255,0.65); font-size: 0.9rem;">
+							Available for calls during the day. If we miss you, we’ll get back to you as soon as possible.
+						</p>
+					</div>
+				</div>
+						
+			</div>
+		</div>
+	</header>
 
-        <!-- Mobile Nav Strip -->
-        <div class="mobile-wrapper">
-            <div class="mobile-nav container mobile-nav-container">
-                <img class="light" id="mobile-logo" src="/images/logo.svg" alt="mobile_company_logo" width="110" height="32">
+	<section id="services" class="section">
+		<div class="container">
+			<div class="section-head">
+				<span class="eyebrow">Services</span>
+				<h2>Seasonal property services for Sherwood Park</h2>
+				<p>
+					From weekly lawn care to snow removal and spring cleanup, we provide dependable service with one simple goal: make it easy for you to call and get the job done right.
+				</p>
+			</div>
+			<div class="card-grid">
+				<article class="card">
+					<div class="price">Starting at $180/month</div>
+					<h3>Lawn Care</h3>
+					<p>
+						Weekly mowing, trimming, edging, and seasonal upkeep for homeowners who want a clean, well-kept yard without the hassle.
+					</p>
+					<ul class="feature-list">
+						<li>Weekly or recurring service</li>
+						<li>Clean edging and trimming</li>
+						<li>Residential-friendly scheduling</li>
+					</ul>
+					
+				</article>
 
-                <img class="dark" id="mobile-logo" src="/images/logo-white.svg" alt="mobile_company_logo" width="110" height="32">
+				<article class="card">
+					<div class="price">Starting at $210/month</div>
+					<h3>Snow Removal</h3>
+					<p>
+						Fast, dependable clearing for driveways, sidewalks, and small properties so you can count on safe access after snowfall.
+					</p>
+					<ul class="feature-list">
+						<li>Driveways and walkways</li>
+						<li>Prompt snow response</li>
+						<li>Seasonal plans available</li>
+					</ul>
+					
+				</article>
 
-                <!-- Hamburger Menu -->
-                <button aria-label="open the menu" id="menu-button" class="hamburger hamburger--spring" onclick="toggleNav()" type="button">
-                    <span aria-hidden="true" class="hamburger-box">
-                        <span aria-hidden="true" class="hamburger-inner"></span>
-                    </span>
-                </button>
-            </div>
-        </div>
+				<article class="card">
+					<div class="price">Starting at $275</div>
+					<h3>Spring Cleanup</h3>
+					<p>
+						Power raking, core aeration, blowouts, and debris removal to get your property cleaned up and ready for the season ahead.
+					</p>
+					<ul class="feature-list">
+						<li>Power raking</li>
+						<li>Core aeration</li>
+						<li>Garden and rock bed cleanup</li>
+					</ul>
+					
+				</article>
+			</div>
+		</div>
+	</section>
 
-        <!-- ============================================ -->
-        <!--                   NAVIGATION                 -->
-        <!-- ============================================ -->
+	<section id="why-us" class="section alt-band">
+		<div class="container two-col">
+			<div>
+				<span class="eyebrow">Why homeowners choose us</span>
+				<h2 style="font-size: clamp(2rem, 4vw, 3.25rem); line-height: 1.08; letter-spacing: -0.03em; margin: 14px 0;">
+					Reliable service you can count on
+				</h2>
+				<p style="color: var(--muted); font-size: 1.05rem;">
+					We focus on consistent, high-quality work and clear communication so you always know your property is being taken care of properly.
+				</p>
+			</div>
+			<div class="benefit-grid">
+				<div class="benefit">Reliable scheduling you can depend on</div>
+				<div class="benefit">Fast response by phone or text</div>
+				<div class="benefit">Friendly, professional service</div>
+				<div class="benefit">Attention to detail on every job</div>
+				<div class="benefit">Consistent results season after season</div>
+				<div class="benefit">Proudly serving Sherwood Park</div>
+			</div>
+		</div>
+	</section>
 
-        <nav>
-            <div class="navbar-menu">
-                <div id="side-menu" class=" side-nav">
-                    <a class="nav-logo" href="/index.html">
-                        <img class="light" aria-hidden="true" decoding="async" src="images/logo.svg" alt="compnay logo" height="80">
-                        <img class="dark" aria-hidden="true" decoding="async" src="images/logo-white.svg" alt="compnay logo" height="80">
-                    </a>
-                    <ul id="on-top" class="navbar-links">
-                        <li class="nav-li"><a id="active-menu" href="index.html">Home</a></li>
-                        <li class="nav-li"><a class="link" href="/about.html">About</a></li>
-                        <!-- <li class="nav-li"><a class="link" href="html/portfolio.html">Portfolio</a></li> -->
+	<section id="about" class="section alt-band">
+		<div class="container two-col" style="align-items: center;">
+			<div>
+				<img src="about-team.png" alt="Luke Boman and Noah Letawsky of Seasonal Soldiers" style="width: 100%; border-radius: 28px; border: 1px solid var(--line); box-shadow: var(--shadow);" />
+			</div>
+			<div>
+				<span class="eyebrow">Who We Are</span>
+				<h2 style="font-size: clamp(2rem, 4vw, 3.25rem); line-height: 1.08; letter-spacing: -0.03em; margin: 14px 0;">
+					We’re Luke Boman and Noah Letawsky, proud Sherwood Park locals.
+				</h2>
+				<p style="color: var(--muted); font-size: 1.05rem; margin-bottom: 24px;">
+					We started this company three years ago with one goal: to work for ourselves, grow something we could be proud of, and serve the community we’ve called home our entire lives.
+				</p>
+				<p style="color: var(--muted); font-size: 1.05rem; margin-bottom: 24px;">
+					What began as two friends with a mower and a shovel has grown into a reliable, trusted service focused on quality work and strong client relationships. We both enjoy being our own bosses and take pride in holding each other accountable to the high standards we’ve set. That means when you hire us, you’re getting two people who genuinely care—about the job, about your property, and about earning your trust.
+				</p>
+				<p style="color: var(--muted); font-size: 1.05rem; margin-bottom: 24px;">
+					Our business is built on consistency, attention to detail, and communication. Whether it’s a spring cleanup, weekly lawn care, or snow removal after a big storm, we treat every job like it’s our own yard. We’re committed to doing things right the first time and making sure every customer feels looked after.
+				</p>
+				<p style="color: var(--muted); font-size: 1.05rem; margin-bottom: 0;">
+					Sherwood Park is our home, and we’re proud to keep it looking sharp year-round. When you support us, you’re supporting local.
+				</p>
+			</div>
+		</div>
+	</section>
 
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-        
-    <main id="main">
-    
-        <!-- ============================================ -->
-        <!--                    LANDING                   -->
-        <!-- ============================================ -->
-    
-        <section id="hero">
-            <div class="hero-content">
-                <div class="heroText">
-                    <h1 id="home-h">Trusted service. Quality work.</h2>
-                    <p>
-                        We take pride in the high standards we’ve set. That means you’re getting people who genuinely care about the job, about your property, and about earning your trust.
-                    </p>
-                    <div class="buttons">
-                        <a class="button-solid" href="/about.html" >
-                            About Us
-                        </a>
-                        <a class="call-now" href="tel:780-886-9711">
-                            <img class="light" decoding="async" src="/images/phone.svg" alt="" aria-hidden="true" width="21" height="21">
-                            <img class="dark" decoding="async" src="/images/phone-dark.svg" alt="" aria-hidden="true" width="21" height="21">
-                            <div class="group">
-                                <span class="text">Call Now</span>
-                                <span class="number">(780) 886-9711</span>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <img decoding="async" src="/images/ryan-caselli.png" alt="" class="business-casual" width="" height="">
-            </div>
-        </section>
+	<section id="reviews" class="section">
+		<div class="container">
+			<div class="section-head">
+				<span class="eyebrow">Reviews</span>
+				<h2>What our customers say</h2>
+				<p>
+					Homeowners across Sherwood Park trust us for reliable lawn care, snow removal, and seasonal cleanup. Here’s what a few of them have to say.
+				</p>
+			</div>
+			<div class="review-grid">
+				<div class="review">
+					<p>I have been very impressed with this company! I especially want to give a shout out to Luke and Noah! These two young men have outstanding work ethics, something that is seriously lacking these days. When they did my fall clean up, there wasn't a leaf in sight!</p>
+					<strong>Barbara</strong>
+				</div>
+				<div class="review">
+					<p>We have been using Seasonal Soldiers for three seasons now. Luke and Noah are very professional, respectful, and dependable. They do a great job and really take pride in the work that they do for their customers. We highly recommend their services.</p>
+					<strong>Todd &amp; Karen</strong>
+				</div>
+				<div class="review">
+					<p>Seasonal Soldiers is incredibly reliable. They show up as promised, even in the worst weather, and consistently go above and beyond to make sure the job is done right. Hardworking, dependable, and professional—highly recommend.</p>
+					<strong>Nancy</strong>
+				</div>
+			</div>
+		</div>
+	</section>
 
-        <!-- ============================================ -->
-        <!--                  Services                    -->
-        <!-- ============================================ -->
+	
 
-        <section id="services" class="section">
-            <div class="service">
-                <h2>Lawn Care Services<span> starting at $180 monthly</span></h2>
-                <p>
-                    From mowing and trimming to full seasonal upkeep, we offer reliable service tailored to your needs.
-                </p>
-                <a href="tel:780-886-9711" class="button-solid">Get in Touch</a>
-            </div>
-            <div class="service">
-                <h2>Snow Removal Services<span> starting at $210 monthly </span></h2>
-                <p>
-                   Whether it’s your driveway, sidewalks, or parking areas, we offer prompt, efficient service you can count on all season long. 
-                </p>
-                <a href="tel:780-886-9711" class="button-solid">Get in Touch</a>
-            </div>
-            <div class="service">
-                <h2>Spring Cleanup<span> starting at $275</span></h2>
-                <p>
-                    Services include power raking, core aeration, garden and rock bed blowouts, and full debris removal. Give your lawn the healthy head start it needs.
-                </p>
-                <a href="tel:780-886-9711" class="button-solid">Get in Touch</a>
-            </div>
-        </section>
+	
+	<div class="mobile-callbar">
+		<a class="btn btn-primary" href="tel:7808869711">Call (780) 886-9711</a>
+	</div>
 
-        <!-- ============================================ -->
-        <!--                   About                      -->
-        <!-- ============================================ -->
-
-        
-        
-    </main>
-
-    <!-- ============================================ -->
-    <!--                     FOOTER                   -->
-    <!-- ============================================ -->
-
-    <footer id="footer">
-        <div class="container">
-            <div class="left-section">
-                <a class="logo" href="/index.html"><img loading="lazy" decoding="async" src="/images/logo-white.svg" alt="logo" width="293" height="91"></a>
-                <p>
-                    
-                </p>
-            </div>
-            <div class="right-section">
-                <div class="lists">
-                    <ul>
-                        <li><h2>Company</h2></li>
-                        <li><a href="/index.html">Home</a></li>
-                        <li><a href="/about.html">About Us</a></li>
-                    </ul>
-                    <ul>
-                        <li><h2>Get in Touch</h2></li>
-                        <li><img loading="lazy" decoding="async" src="/images/pin.svg" alt="" width="24" height="24"><a> Sherwood Park, AB</a></li>
-                        <li><img loading="lazy" decoding="async" src="/images/footer-phone.svg" alt="" width="24" height="24"><a href="tel:780-886-9711"> (780) 886-9711</a></li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </footer>
-
-    <script>
-        var ba = ["MSIE","Trident","Edge"];
-        var b, ua = navigator.userAgent;
-        for(var i=0; i < ba.length; i++){
-            if( ua.indexOf(ba[i]) > -1 ){
-                b = ba[i];
-                break;
-            }
-        }
-        if(b == "MSIE" || b == "Trident" || b == "Edge"){
-            b = "Internet Explorer";
-            alert("You are using the " + b + " browser and this browser is incompatible with this website and many others.  Please open this page in a different browser, either Chrome or Firefox.  Thank you!");
-        }
-    </script>
-
-    <script defer src="/app.js"></script>
+	<footer>
+		<div class="container">
+			Seasonal Soldiers • Sherwood Park, Alberta • <a href="tel:7808869711">(780) 886-9711</a>
+		</div>
+	</footer>
 </body>
 </html>
